@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroidRSSFeedTutorial</string>
+    <string-array name="array_main">
+        <item>计算机学院</item>
+        <item>电气学院</item>
+    </string-array>
+    <string-array name="array_computer">
+        <item>软件工程</item>
+        <item>信息安全</item>
+        <item>物联网</item>
+    </string-array>
+    <string-array name="array_electrical">
+        <item>电气工程</item>
+        <item>电机工程</item>
+    </string-array>
+</resources>

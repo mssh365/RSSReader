@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myrss">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--  发送消息-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!--  阅读消息-->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!--  写入消息-->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.myrss.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.myrss.ListActivity"></activity>
+        <activity android:name="com.myrss.ModifyActivity"></activity>
+        <activity android:name="com.myrss.SearchActivity"></activity>
+        <activity android:name="com.myrss.SMSActivity">
+        </activity>
+        <activity android:name="com.myrss.TestActivity"></activity>
+        <activity android:name="com.myrss.BrowserActivity"></activity>
+        <activity android:name="com.myrss.RSSFeedActivity"></activity>
+    </application>
+</manifest>
